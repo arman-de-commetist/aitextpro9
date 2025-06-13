@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AITexPro — генератор текстов</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Text Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
     body {
-      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .btn {
+      margin-top: 30px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #019875;
+    }
+    section {
+      margin-top: 60px;
+      max-width: 800px;
+      text-align: center;
+    }
+    footer {
+      margin-top: auto;
+      font-size: 14px;
+      opacity: 0.5;
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-
-  <header class="bg-white shadow-md p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">AITexPro</h1>
-    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Попробовать</a>
+<body>
+  <header>
+    <h1>AI Text Pro</h1>
+    <p>Создавай профессиональные тексты с помощью искусственного интеллекта — быстро, просто, бесплатно.</p>
+    <a href="#start"><button class="btn">Попробовать сейчас</button></a>
   </header>
 
-  <section class="text-center py-20 bg-gradient-to-b from-blue-50 to-white">
-    <h2 class="text-3xl font-semibold mb-4">Добро пожаловать!</h2>
-    <p class="text-lg">Сайт создаёт тексты на базе ИИ. Просто нажми "Попробовать".</p>
+  <section id="start">
+    <h2>Почему AI Text Pro?</h2>
+    <p style="margin: 20px 0;">
+      🔹 Генерация текстов любой тематики <br />
+      🔹 Копирайтинг за секунды <br />
+      🔹 Помощь с идеями, письмами, постами <br />
+      🔹 Без ограничений — всё бесплатно
+    </p>
   </section>
 
+  <footer>
+    © 2025 AI Text Pro — by Arman
+  </footer>
 </body>
 </html>
