@@ -1,2 +1,4 @@
-// Скрипт можно расширить, если нужно — пока он пустой
-console.log("AI Text Pro готов к использованию");
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Спасибо! Ваше сообщение отправлено.");
+});
