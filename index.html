@@ -3,40 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Text Pro — генератор текстов с искусственным интеллектом. Быстро, удобно, бесплатно.">
   <title>AI Text Pro</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <header>
-    <h1>AI Text Pro</h1>
-    <p>Создавай профессиональные тексты с помощью ИИ — быстро, просто, бесплатно.</p>
-    <a href="#start"><button class="btn">Попробовать сейчас</button></a>
+    <img src="assets/logo.png" alt="AI Text Pro Logo" class="logo">
+    <div class="lang-toggle">
+      <button onclick="setLanguage('ru')">RU</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+    <h1 data-lang="title">AI Text Pro</h1>
+    <p data-lang="subtitle">Создавай профессиональные тексты с помощью искусственного интеллекта — быстро, просто, бесплатно.</p>
+    <a href="#start"><button class="btn" data-lang="try">Попробовать сейчас</button></a>
   </header>
 
-  <section id="start">
-    <h2>Почему AI Text Pro?</h2>
-    <p>
-      🔹 Генерация текстов любой тематики<br />
-      🔹 Копирайтинг за секунды<br />
-      🔹 Помощь с идеями, письмами, постами<br />
-      🔹 Без ограничений — всё бесплатно
-    </p>
-  </section>
+  <main id="start">
+    <section>
+      <h2 data-lang="why">Почему AI Text Pro?</h2>
+      <p data-lang="features">
+        🔹 Генерация текстов любой тематики <br />
+        🔹 Копирайтинг за секунды <br />
+        🔹 Помощь с идеями, письмами, постами <br />
+        🔹 Без ограничений — всё бесплатно
+      </p>
+    </section>
 
-  <section id="contact">
-    <h2>Связаться с нами</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Ваше сообщение" required></textarea>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-    <div class="social">
-      <a href="https://www.instagram.com/_arman_ospanov_999/?hl=ru" target="_blank">Instagram</a> |
-      <a href="tel:+77474543497">Позвонить: 8 747 454 34 97</a>
-    </div>
-  </section>
+    <section class="contact">
+      <h3 data-lang="contact">Контакты</h3>
+      <p>
+        Instagram: <a href="https://www.instagram.com/_arman_ospanov_999/" target="_blank">_arman_ospanov_999</a><br />
+        Телефон: <a href="tel:+77474543497">+7 747 454 34 97</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     © 2025 AI Text Pro — by Arman

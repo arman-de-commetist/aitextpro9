@@ -1,4 +1,13 @@
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Спасибо! Ваше сообщение отправлено.");
+document.addEventListener('DOMContentLoaded', () => {
+  const tryButton = document.querySelector('.btn');
+
+  tryButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector('#start');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    console.log("Кнопка 'Попробовать сейчас' нажата!");
+  });
 });
